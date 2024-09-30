@@ -1,0 +1,25 @@
+package com.example.demo.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.demo.dao.entity.ProductEntity;
+import com.example.demo.service.ProductService;
+
+public class ProductController {
+	@Autowired
+	private ProductService service;
+	
+	public List<ProductEntity> getAllProducts(){
+		return service.getAllProducts();
+	}
+	
+	public ProductEntity getProduct(int id) {
+		return service.getProduct(id);
+	}
+	
+	public ProductEntity addProduct(ProductEntity product) {
+		return service.addProduct(product);
+	}
+}

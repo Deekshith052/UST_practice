@@ -1,0 +1,15 @@
+package com.example.demo.dao.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="product_details")
+public class ProductEntity {
+	@Id
+	@GeneratedValue
+	private int prodId;
+	private String prodName;
+}

@@ -1,0 +1,2 @@
+spring.application.name=monolithic-spring-security-product
+server.port=8085
